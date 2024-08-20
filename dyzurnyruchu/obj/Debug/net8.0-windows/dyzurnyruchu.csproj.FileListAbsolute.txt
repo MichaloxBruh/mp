@@ -25,3 +25,4 @@ C:\Users\Michał\source\repos\mp\dyzurnyruchu\bin\Debug\net8.0-windows\NAudio.Wi
 C:\Users\Michał\source\repos\mp\dyzurnyruchu\bin\Debug\net8.0-windows\XmpCore.dll
 C:\Users\Michał\source\repos\mp\dyzurnyruchu\obj\Debug\net8.0-windows\dyzurnyruchu.csproj.AssemblyReference.cache
 C:\Users\Michał\source\repos\mp\dyzurnyruchu\obj\Debug\net8.0-windows\dyzurnyr.41BFB6AB.Up2Date
+C:\Users\Michał\source\repos\mp\dyzurnyruchu\obj\Debug\net8.0-windows\dyzurnyruchu.sourcelink.json

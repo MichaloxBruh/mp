@@ -34,6 +34,7 @@
             openFileDialog1 = new OpenFileDialog();
             label1 = new Label();
             button1 = new Button();
+            button2 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,19 +78,30 @@
             // 
             // button1
             // 
-            button1.Location = new Point(227, 187);
+            button1.Location = new Point(187, 148);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 2;
-            button1.Text = "Play/Pause";
+            button1.Text = "Play";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(268, 148);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 3;
+            button2.Text = "Stop";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(541, 263);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
@@ -111,5 +123,6 @@
         private OpenFileDialog openFileDialog1;
         private Label label1;
         private Button button1;
+        private Button button2;
     }
 }

@@ -11,13 +11,13 @@ namespace dyzurnyruchu
 {
     public partial class Form1 : Form
     {
-       
+
         string musicPath = "";
         private WaveOutEvent outputDevice;
         private AudioFileReader audioFile;
 
-        bool isPaused = true;
-        
+        bool isPlaying = false;
+
 
 
         public Form1()
@@ -59,8 +59,8 @@ namespace dyzurnyruchu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (isPaused == true) ;
             {
+                        
                 if (outputDevice == null)
                 {
                     outputDevice = new WaveOutEvent();
@@ -80,12 +80,18 @@ namespace dyzurnyruchu
                     }
                 }
                 outputDevice.Play();
+                isPlaying = true;
             }
 
         }
 
-     
-        
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (isPlaying == true) ;
+            {
+                outputDevice.Stop();
+
+            }
+        }
     }
 };
