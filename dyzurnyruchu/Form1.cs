@@ -15,7 +15,7 @@ namespace dyzurnyruchu
         string musicPath = "";
         private WaveOutEvent outputDevice;
         private AudioFileReader audioFile;
-
+        bool isClosing = false; 
         bool isPlaying = false;
 
 
@@ -71,6 +71,7 @@ namespace dyzurnyruchu
                     if (musicPath != "")
                     {
                         audioFile = new AudioFileReader(musicPath);
+                        outputDevice.PlaybackStopped += (s, a) => { if (isClosing) { outputDevice.Dispose(); audioFile.Dispose(); } };
                         outputDevice.Init(audioFile);
                     }
                     else if (musicPath == "")
